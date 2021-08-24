@@ -1,6 +1,11 @@
-<div class="container">
+
+<app-header></app-header>
+<div class="body-home">
     <div class="actions">
-        <button class="btn btn-info" >Ver Usuarios</button>
-        <button class="btn btn-info add-user">Añadir Usuario</button>
+        <button (click)="showUsers()" routerLink="/listar" class="btn btn-info" >Ver Usuarios</button>
+        <button (click)="addUser()"  class="btn btn-info add-user">Añadir Usuario</button>
+    </div>
+    <div class="table">
+        <router-outlet></router-outlet>
     </div>
 </div>

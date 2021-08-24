@@ -1,8 +1,22 @@
-.container{
-    padding-top: 5px;
+.body-home{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 90%;
+    min-height: 640px;
+
+}
+.actions{
+    grid-row: 1;
+    grid-column: 1;
+    padding-top: 10px;
+    text-align: center;
 }
 
 .btn{
     margin-right: 4px;
     color: white;
 }
+
+@media (max-width: 600px) {
+  
+  }
