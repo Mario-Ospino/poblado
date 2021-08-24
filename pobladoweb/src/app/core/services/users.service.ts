@@ -10,6 +10,6 @@ export class UsersService {
   URL = 'http://localhost:8080/api/users';
 
   getUsers(){
-    return this.http.get<user>
+    return this.http.get<user>()
   }
 }
