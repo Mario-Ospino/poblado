@@ -1,0 +1,39 @@
+.header-nav{
+    background-color: #004380;
+    height: 85px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100%;
+}
+
+/* texto */
+.title {
+    align-self: center;
+    color: white;
+    font-size: 2em;
+}
+/* img */
+
+.logo-elPoblado{
+    grid-row: 1;
+    grid-column: 1;
+    margin-left: 3rem;
+    max-width: 200px;
+    max-height: 80px;
+}
+
+
+
+@media (max-width: 600px) {
+    .header-nav{
+        display: grid;
+        height: 160px;
+        text-align: center;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .logo-elPoblado{
+        margin:auto;
+    }
+  }
